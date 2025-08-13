@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>For My Love ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="surprise-page fade-in">
+  <canvas id="heartsCanvas"></canvas>
+  
+  <div class="message">
+    <h1 id="loveTitle"></h1>
+    <p id="loveText"></p>
+  </div>
+
+  <script src="hearts.js"></script>
+  <script src="typewriter.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      typeWriter("loveTitle", "I love you so so much Shonaa ❤️", 100, () => {
+        typeWriter("loveText", "Please marry me, I can't seriously live without you. It's so painful to survive without you.", 50);
+      });
+
+      // Delay music by 1.5 seconds
+      setTimeout(() => {
+        const iframe = document.createElement('iframe');
+        iframe.width = 0;
+        iframe.height = 0;
+        iframe.style.display = 'none';
+        iframe.src = "https://www.youtube.com/embed/iiKOl4hjAP4?autoplay=1&loop=1&playlist=iiKOl4hjAP4";
+        iframe.frameBorder = 0;
+        iframe.allow = "autoplay; encrypted-media";
+        document.body.appendChild(iframe);
+      }, 1500);
+    });
+  </script>
+</body>
+</html>
