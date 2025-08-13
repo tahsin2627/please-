@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Enter Key</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="password-page">
+  <div class="password-container">
+    <h1>💖 For My Shonaa 💖</h1>
+    <input type="password" id="password" placeholder="Enter the secret key">
+    <button onclick="checkPassword()">Unlock</button>
+  </div>
+
+  <script>
+    function checkPassword() {
+      const pass = document.getElementById('password').value;
+      if (pass === 'modon') {
+        window.location.href = 'main.html';
+      } else {
+        alert('Wrong key, try again!');
+      }
+    }
+  </script>
+</body>
+</html>
